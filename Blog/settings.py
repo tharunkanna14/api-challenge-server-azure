@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '2umzpi4#0!dxak19ht&k0(xwxl=xw=e1!)9js&-6#o+^ur(t4u'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -123,9 +123,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = os.environ.get("DJANGO_STATIC_URL", "/static/")
 
-STATIC_ROOT = os.path.join(BASE_DIR,'static')
+STATIC_ROOT =  os.environ.get("DJANGO_STATIC_ROOT", "./static/")
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
