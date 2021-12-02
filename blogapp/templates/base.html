@@ -102,7 +102,7 @@
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light shadow" id="mainNav">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/">Ashwin's Django central</a>
+                <a class="navbar-brand" href="/">Django central</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                     aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -111,13 +111,11 @@
                     <ul class="navbar-nav ml-auto">
                         <li>
                             <form id="searchform" action="{% url 'search' %}" method="GET">
-                                <input type="text" name="q" type="text" value="{{ request.GET.q }}" placeholder="Search Posts Here..." required />
+                                <input type="text" name="q" type="text" value="{{ request.GET.q }}" placeholder=" Here..." required />
                                 <button type="submit" onclick="searchform.submit()" class=" text-white my-color btn-primary"><i class="fa fa-search"></i></button>
                             </form>
                         </li>
-                        <li class="nav-item text-black">
-                            <a class="nav-link text-black font-weight-bold" href="https://pcme-tnboard.000webhostapp.com/contact.html" target="_blank">Contact Me</a>
-                        </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -127,7 +125,7 @@
         {% endblock content %}
         <!-- Footer -->
         <footer class="py-3 bg-grey">
-            <p class="m-0 text-dark text-center ">&copy; 2020 Copyright: Ashwin.B, All rights reserved</p>
+            <p class="m-0 text-dark text-center ">&copy; 2021 Copyright:All rights reserved</p>
         </footer>
         <br><br>
     </body>
